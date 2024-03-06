@@ -1,0 +1,107 @@
+.font-roboto {
+    font-family: Roboto;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fs-19 {
+    font-size: 19px !important;
+}
+
+.header-middle {
+    padding: 5px 0 5px;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    list-style: outside none none;
+    padding-right: 20px;
+    position: relative;
+}
+
+.header-menu ul li a {
+    color: #111;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 78px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    padding-top: 2px;
+}
+
+.btn-buy-now { 
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0.85714286rem 1.71428571rem;
+    background-color: #e4002b;
+    border: 1px solid #e4002b;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    border-radius: 25px;
+    
+}
+
+.btn-buy-now:hover { 
+    color: #e4002b;
+    background-color: #fff;
+    border: 1px solid #e4002b;
+}
+
+.header-middle-right {
+    padding-top: 20px;
+}
+
+.shopping-cart-img img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Danh mục món ăn */
+.best-food-width-2 {
+    max-width: 100%;
+}
+
+
+/* Sản phẩm */
+.product-action {
+    background-color: #e4002b;
+    
+}
+
+.product-wrapper:hover .product-action {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0px;
+}
+
+.pro-action-left > a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.pro-action-left > a:hover {
+    color: #111;
+}
+
+.pro-action-left > a:hover,
+.pro-action-right > a:hover,
+.product-content > h4 > a:hover {
+    color: #e02c2b;
+}
+
+
