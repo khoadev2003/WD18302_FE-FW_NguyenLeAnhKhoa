@@ -104,4 +104,36 @@
     color: #e02c2b;
 }
 
+.container-fluid {
+    width: 100%;
+    
+}
+
+
+.btn-custom {
+    background-color: #e02c2b !important;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    padding: 13px 14px;
+}
+
+.btn-outline-custom {
+    background-color: #fff !important;
+    border: 1px solid #e02c2b !important;
+    border-radius: 5px;
+    color: #e02c2b !important;
+    display: inline-block;
+    line-height: 1;
+    padding: 13px 14px;
+}
+
+.btn-outline-custom:hover {
+    background-color: #e02c2b !important;
+    border: 1px solid transparent;
+    color: #fff !important;
+}
+
 

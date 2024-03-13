@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nunito:ital,wght@0,400;0,600;0,700;1,200&family=Open+Sans:wght@400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --custom-color: #e4002b;
+}
 
 body {
     /* font-family: 'Rubik', sans-serif; */
@@ -26,12 +29,30 @@ a,
     transition: all 0.3s ease-out 0s;
 }
 .btn {
-    border-radius: 0px;
+    border-radius: 5px;
     font-size: 14px;
     padding: 0px 15px;
     height: 30px;
     line-height: 30px;
 }
+
+.btn-outline-custom {
+    --bs-btn-color: var(--custom-color);
+    --bs-btn-border-color: var(--custom-color);
+    --bs-btn-hover-color: var(--custom-color);
+    --bs-btn-hover-bg: var(--custom-color);
+    --bs-btn-hover-border-color: var(--custom-color);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--custom-color);
+    --bs-btn-active-border-color: var(--custom-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--custom-color);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--custom-color);
+    --bs-gradient: none;
+}
+
 a:focus,
 .btn:focus {
     text-decoration: none;
