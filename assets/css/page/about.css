@@ -1,0 +1,270 @@
+
+.overview-content-2 > h2 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 24px;
+    padding-bottom: 28px;
+    position: relative;
+}
+.overview-content-2 > h2 span {
+    color: #e02c2b;
+}
+.overview-content-2 > h2::before {
+    background-color: #e02c2b;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all 0.4s ease 0s;
+    width: 80px;
+}
+.overview-content-2 > p.peragraph-blog {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 21px;
+}
+.count-icon span {
+    font-size: 50px;
+    line-height: 1;
+    display: inline-block;
+}
+.count-title h2 {
+    color: #e02c2b;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    margin: 15px 0 5px;
+}
+.count-title>span {
+    color: #454545;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.single-count:hover .count-icon span {
+    animation: 850ms ease-in-out 0s normal none 1 running tada;
+}
+.section-border.section-mrg-none {
+    margin-right: 0;
+}
+.team-wrapper {
+    background-color: #f1f1f1;
+}
+.team-img {
+    overflow: hidden;
+    position: relative;
+}
+.team-action {
+    background: #fff none repeat scroll 0 0;
+    left: 0;
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 70%;
+    transform: translateY(-50%);
+    transition: all 0.6s ease 0s;
+    width: 100%;
+    z-index: 5;
+}
+.team-wrapper:hover .team-action {
+    opacity: 1;
+    top: 50%;
+}
+.team-action a {
+    color: #e02c2b;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+    margin: 0 10px;
+}
+.team-action a:hover {
+    color: #2f333a;
+}
+.team-img img {
+    width: 100%;
+}
+.team-content {
+    padding: 20px 10px 23px;
+}
+.team-content > h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 5px;
+    text-transform: capitalize;
+}
+.team-content > span {
+    font-size: 15px;
+    font-style: italic;
+}
+.overview-img.text-center img {
+    max-width: 100%;
+}
+.skill {
+    overflow: hidden;
+    padding-top: 33px;
+}
+.skill .progress {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: none;
+    height: 6px;
+    margin-bottom: 68px;
+    overflow: visible;
+    position: relative;
+}
+.skill .progress:last-child {
+    margin-bottom: 0px;
+}
+.skill .progress .lead {
+    color: #2f333a;
+    font-size: 14px;
+    font-weight: 500;
+    left: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: -30px;
+    z-index: 99;
+}
+.progress-bar {
+    background-color: #e02c2b;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    height: 100%;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+    transition: width 0.6s ease 0s;
+    width: 0;
+}
+.skill .progress-bar > span {
+    color: #2f333a;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: -4px;
+    margin-top: -32px;
+    padding: 0 5px;
+    position: absolute;
+    right: 0;
+}
+.single-work {
+    display: block;
+    margin-bottom: 26px;
+}
+.single-work:last-child {
+    margin-bottom: 0px;
+}
+.work-number {
+    display: inline-block;
+    float: left;
+}
+.work-number > span {
+    background: #ebebeb none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #2f333a;
+    display: block;
+    float: left;
+    height: 42px;
+    line-height: 43px;
+    margin-top: 3px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 42px;
+}
+.single-work:hover .work-number > span {
+    background: #e02c2b none repeat scroll 0 0;
+    color: #fff;
+}
+.work-content {
+    overflow: hidden;
+    padding-left: 15px;
+}
+.work-content h5 {
+    color: #2f333a;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+}
+.work-content > p {
+    color: #555;
+    margin: 0;
+}
+
+.wrap-left {
+    overflow-y: auto; /* Thêm thanh cuộn dọc khi nội dung vượt quá kích thước */
+    max-height: 510px; /* Đặt chiều cao tối đa cho phần tử wrap-left */
+    box-shadow: 2.5px 4.33px 18px 0 rgb(204, 204, 204);
+}
+
+.wrap-left::-webkit-scrollbar-track {
+    background: #e02c2b;
+}
+
+/* Thanhh cuộn trên các trình duyệt sử dụng Webkit (bao gồm Chrome/Safari) */
+.wrap-left::-webkit-scrollbar {
+    width: 10px; /* Chiều rộng của thanh cuộn */
+}
+
+/* Đường viền của thanh cuộn */
+.wrap-left::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Màu nền của thanh cuộn */
+}
+
+/* Thanh cuộn */
+.wrap-left::-webkit-scrollbar-thumb {
+    background: #e02c2b;
+    border-radius: 5px; /* Độ cong của viền của thanh cuộn */
+}
+
+/* Màu nền của thanh cuộn khi di chuột qua */
+.wrap-left::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.time {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 125px;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    flex: 0 0 125px;
+    transition: .4s ease-in-out;
+    padding: 0 30px;
+    color: #666;
+    text-align: center;
+}
+
+.time p {
+    font-size: 16px;
+}
+
+.time span {
+    /* color: #333; */
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+
+.list-location:hover {
+    background-color: #e02c2b;
+    color: #fff;
+}
+
+.list-location:hover p {
+    color: #fff;
+}
+
+.list-location:hover span {
+    color: #fff;
+}
+
+
+
+.location {
+    font-size: 20px;
+    font-weight: 700;
+}
