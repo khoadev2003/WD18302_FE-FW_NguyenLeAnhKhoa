@@ -3,9 +3,17 @@
     
     /* Cart Currency Search toggle active */
     $(".header-cart a").on("click", function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         $(this).parent().find('.shopping-cart-content').slideToggle('medium');
     })
+
+    $(document).on("click", function(event) {
+        // Kiểm tra xem người dùng đã click vào biểu tượng giỏ hàng hoặc nội dung giỏ hàng chưa
+        if (!$(event.target).closest('.header-cart').length) {
+            // Nếu không phải là giỏ hàng, ẩn nội dung giỏ hàng
+            $('.header-cart .shopping-cart-content').slideUp('medium');
+        }
+    });
     
     /*--
     Menu Stick
@@ -33,8 +41,8 @@
     $('.slider-active').owlCarousel({
         loop: true,
         nav: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
+        autoplay: true,
+        autoplayTimeout: 3000,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
@@ -52,18 +60,19 @@
         }
     })
     
-    /* Best selling active */
+    /* Danh mục sản phẩm trang chủ */
     $('.product-slider-active').owlCarousel({
         loop: true,
         nav: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
+
+        autoplay: true,
+        autoplayTimeout: 3000,
         navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
         item: 3,
         margin: 30,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             576: {
                 items: 2
@@ -81,17 +90,18 @@
     })
 
     /* Best selling active */
+    /* Sản phẩm tương tự */
     $('.related-product-active').owlCarousel({
         loop: true,
         nav: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
+        autoplay: true,
+        autoplayTimeout: 4000,
         navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
         item: 4,
         margin: 30,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             576: {
                 items: 2
@@ -110,30 +120,44 @@
             }
         }
     })
-    
-    
-    
-    /* Testimonial active */
-    $('.testimonial-active').owlCarousel({
+
+    /* List bài viết */
+    $('.blog-slider-active').owlCarousel({
         loop: true,
-        nav: false,
-        autoplay: false,
-        autoplayTimeout: 5000,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        item: 1,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        item: 4,
+        margin: 20,
         responsive: {
             0: {
-                items: 1
+                items: 2,
+                nav: false
+            },
+            576: {
+                items: 2,
+                nav: false
             },
             768: {
-                items: 1
+                items: 3
             },
-            1000: {
-                items: 1
+            992: {
+                items: 3
+            },
+            1100: {
+                items: 3
+            },
+            1200: {
+                items: 4,
+                nav: true
             }
-        }
+        },
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"] // Thêm nút "prev" và "next"
     })
+    
+    
+    
+    
 
     /* Brand logo active */
     $('.brand-logo-active').owlCarousel({

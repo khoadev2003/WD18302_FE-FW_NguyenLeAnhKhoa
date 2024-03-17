@@ -1207,6 +1207,7 @@ product-quantity {
 .product-quantity .dec.qtybutton {
     border-right: 1px solid #e5e5e5;
     height: 40px;
+    width: 30px;
     left: 0;
     padding-top: 8px;
     top: 0;
@@ -1214,6 +1215,7 @@ product-quantity {
 .product-quantity .inc.qtybutton {
     border-left: 1px solid #e5e5e5;
     height: 40px;
+    width: 30px;
     padding-top: 9px;
     right: 0;
     top: 0;

@@ -21,7 +21,7 @@ body {
     transition: all 0.3s ease-out 0s;
 }
 a,
-.btn {
+/* .btn {
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
@@ -34,7 +34,7 @@ a,
     padding: 0px 15px;
     height: 30px;
     line-height: 30px;
-}
+} */
 
 .btn-outline-custom {
     --bs-btn-color: var(--custom-color);

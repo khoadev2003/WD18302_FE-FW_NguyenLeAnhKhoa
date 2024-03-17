@@ -206,7 +206,7 @@
 
 /* Thanhh cuộn trên các trình duyệt sử dụng Webkit (bao gồm Chrome/Safari) */
 .wrap-left::-webkit-scrollbar {
-    width: 10px; /* Chiều rộng của thanh cuộn */
+    width: 5px; /* Chiều rộng của thanh cuộn */
 }
 
 /* Đường viền của thanh cuộn */
