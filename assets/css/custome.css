@@ -154,3 +154,17 @@
 
 
 
+.btn-sm-custom {
+    background-color: #e02c2b !important;
+    border: 1px solid transparent;
+    color: #fff !important;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 1;
+    padding: 10px 12px;
+}
+
+.btn-sm-custom:hover {
+   opacity: 0.8;
+}
+

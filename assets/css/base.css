@@ -6,6 +6,7 @@
 
 :root {
     --custom-color: #e4002b;
+    --border-color: #e3e3e3;
 }
 
 body {
@@ -1584,4 +1585,17 @@ textarea:focus {
 }
 .height-100vh {
     height: 100vh;
+}
+
+.input-custom {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid var(--border-color);
+    color: #222;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.input-custom:focus,
+.input-custom:focus {
+    border: 1px solid var(--custom-color);
 }

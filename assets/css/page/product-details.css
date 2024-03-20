@@ -395,10 +395,16 @@
 .rating-form-style input,
 .rating-form-style textarea {
     background: transparent none repeat scroll 0 0;
-    border: 1px solid #eceff8;
-    color: #333;
+    border: 1px solid var(--border-color);
+    color: #222;
     padding-right: 10px;
 }
+
+.rating-form-style input:focus,
+.rating-form-style textarea:focus {
+    border: 1px solid var(--custom-color);
+}
+
 .rating-form-style.form-submit input {
     background: #e02c2b none repeat scroll 0 0;
     border-radius: 5px;
